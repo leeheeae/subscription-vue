@@ -22,6 +22,9 @@ export default {
 .shortcut-banner {
   width: 100%;
   padding: 1rem;
-  background: #ccc;
+  border: 1px solid #e6e5e5;
+  color: #011030;
+  font-size: 1rem;
+  font-weight: 500;
 }
 </style>
