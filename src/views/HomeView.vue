@@ -18,7 +18,7 @@
   export default {
     created() {
       // this.fetchLttoPblancList()
-      this.fetchAPTLttotPblancDetail()
+      // this.fetchAPTLttotPblancDetail()
     },
     methods: {
       async fetchLttoPblancList() {
