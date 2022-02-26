@@ -19,6 +19,6 @@ export default {
 <style>
 @import url("@/assets/base.css");
 .main {
-  padding: 1rem;
+  padding: 1.2rem;
 }
 </style>
