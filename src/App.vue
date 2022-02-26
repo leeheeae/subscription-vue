@@ -1,6 +1,8 @@
 <template>
   <TopHeaderVue />
-  <RouterView />
+  <main class="main">
+    <RouterView />
+  </main>
 </template>
 
 <script>
@@ -16,4 +18,7 @@ export default {
 
 <style>
 @import url("@/assets/base.css");
+.main {
+  padding: 1rem;
+}
 </style>

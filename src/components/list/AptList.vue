@@ -4,7 +4,7 @@
     guide="글자를 클릭하면 입주자 모집 공고 정보를 확인할 수 있습니다."
   />
   <ul>
-    <AptListItem />
+    <AptListItem :aptListItem="aptListItem" />
   </ul>
 </template>
 
@@ -18,12 +18,17 @@ export default {
         MainTitle,
         AptListItem
     },
+    data() {
+      return {
+        aptListItem: []
+      }
+    },
     methods: {
     async fetchLttoPblancList() {   
         try {
           const { data } = await getLttotPblancList();
           const items = data.response.body;
-          console.log(items)
+          this.aptListItem = items.items.item
         }catch(err) {
           console.log(err)
         }
